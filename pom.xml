@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>automated.testing.maven</groupId>
-  <artifactId>YoutubeAutomatedTetsing</artifactId>
+  <artifactId>AutomatedTestingJunit</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <name>YoutubeAutomatedTetsing</name>
@@ -23,6 +23,12 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-junit5</artifactId>
+      <version>2.20.1</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -68,6 +74,11 @@
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
+        </plugin>
+        <plugin>
+          <groupId>io.qameta.allure</groupId>
+          <artifactId>allure-maven</artifactId>
+          <version>2.10.0</version>
         </plugin>
       </plugins>
     </pluginManagement>
