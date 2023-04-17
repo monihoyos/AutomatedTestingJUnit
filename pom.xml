@@ -30,6 +30,11 @@
           <artifactId>allure-testng</artifactId>
           <version>2.19.0</version>
       </dependency>
+      <dependency>
+          <groupId>app.getxray</groupId>
+          <artifactId>xray-testng-extensions</artifactId>
+          <version>0.1.0</version>
+      </dependency>
   </dependencies>
 
   <build>
