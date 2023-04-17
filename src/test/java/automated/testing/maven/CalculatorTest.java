@@ -2,16 +2,15 @@ package automated.testing.maven;
 
 import automated.testing.maven.calculatorProject.Calculator;
 import io.qameta.allure.Allure;
-import io.qameta.allure.Step;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.Assert;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class CalculatorTest {
 
     Calculator calc;
 
-    @Before
+    @BeforeMethod
     public void setUp(){
         calc=new Calculator();
     }
