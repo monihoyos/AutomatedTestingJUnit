@@ -49,4 +49,12 @@ public class CalculatorTest {
         Assert.assertEquals(5,calc.subtract(20,10,5));
     }
 
+    @Test
+    @XrayTest( summary = "Multiplycation of two numbers", description = "tests the multiply of two positive integers", labels = "Calculator, multiply")
+    @Requirement(key = "TNP-12")
+    public void multiplyTwoNumbers(){
+        Allure.step("Doing checks when add 2 numbers");
+        Assert.assertEquals(100,calc.multiply(10,10));
+    }
+
 }
